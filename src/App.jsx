@@ -1,35 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import { Fragment } from "react";
+import { useState } from "react"
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  const [isDark, setIsDark] = useState();
 
   return (
-    <>
+    <Fragment>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        count: {count}
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div>
+        <button>+</button>
+        <button>-</button>
+        <button>reset</button>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </Fragment>
+  )  
 }
+export default App;
 
-export default App
+/**
+ * 리액트 counter 앱 만들기
+ * 1) 숫자(초기값:0)와 +, -, reset 버튼을 만든다.
+ * 2) + 버튼 클릭 시 숫자를 1 증가 시킨다.
+ * 3) - 버튼 클릭 시 숫자를 1 감소 시킨다.
+ * 4) reset 버튼 클릭 시 숫자를 다시 0으로 변경한다.
+ * 5) className과 css 파일을 생성하고, 원하는 css를 추가한다. 
+ * 6) 태그 최상단에 Fragment 추가한다
+ */
