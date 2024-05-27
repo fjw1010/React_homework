@@ -1,5 +1,5 @@
 <h1>React 1일차 과제</h1>
-<h2 align="center">리액트 counter 앱 만들기</h2>
+<h2>리액트 <span style = "strong">counter</span> 앱 만들기</h2>
 <ul>
   <li>숫자(초기값:0)와 +, -, reset 버튼을 만든다.</li>
   <li>+ 버튼 클릭 시 숫자를 1 증가 시킨다.</li>
