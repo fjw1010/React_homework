@@ -1,4 +1,4 @@
-<h1>React 1일차 과제</h1>
+<img src="https://w7.pngwing.com/pngs/79/518/png-transparent-js-react-js-logo-react-react-native-logos-icon-thumbnail.png" /><h1>React 1일차 과제</h1>
 <h2>리액트 counter 앱 만들기</h2>
 <ul>
   <li>숫자(초기값:0)와 +, -, reset 버튼을 만든다.</li>
